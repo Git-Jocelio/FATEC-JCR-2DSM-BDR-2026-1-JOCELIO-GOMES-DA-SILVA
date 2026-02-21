@@ -1,0 +1,17 @@
+
+
+/* Disciplina Banco de Dados II -  aula 1*/
+
+
+create database queimadas_db;
+
+create table focos_calor (estado varchar(50) primarey key,
+                          bioma varchar(50),
+		          data_ocorrencia date);
+
+insert into focos_calor (estado, bioma, data_ocorrencia) values
+                        ('Amazonas', 'Amazônia', '2025-02-01'),
+                        ('Mato Grosso', 'Cerrado', '2025-02-03'),
+                        ('Para', 'Amazônia', '2025-02-05');
+
+select estado, biona, data_ocorrencia from focos_calor;
